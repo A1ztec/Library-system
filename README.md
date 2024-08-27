@@ -31,12 +31,10 @@ A comprehensive web application built with Laravel and Jetstream, designed for m
    
 2. **Install Dependencies**
     ```bash
-  composer install
-   npm install
+    composer install
+    npm install
 
-3.  ##Configure Environment
-
-   Copy the example environment file:
+3.  **Configure Environment**
     ```bash
     cp .env.example .env
     php artisan key:generate
