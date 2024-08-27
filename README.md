@@ -28,33 +28,37 @@ A comprehensive web application built with Laravel and Jetstream, designed for m
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
+   
+2. **Install Dependencies**
+    ```bash
+  composer install
+   npm install
 
+3.  ##Configure Environment
 
-composer install
-npm install
+   Copy the example environment file:
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    php artisan migrate
+    npm run dev
+    php artisan serve
+    
 
-cp .env.example .env
+## Usage
+- **Register**: Navigate to the registration page and create an account.
+- **Login**: Access the login page to enter your credentials and access the student dashboard.
+- **Explore**: View books, borrow them, and manage your profile through the dashboard.
 
-php artisan key:generate
-
-php artisan migrate
-
-npm run dev
-
-php artisan serve
-
-Open your browser and navigate to http://localhost:8000
-Usage
-Register: Navigate to the registration page and create an account.
-Login: Access the login page to enter your credentials and access the student dashboard.
-Explore: View books, borrow them, and manage your profile through the dashboard.
-Contributing
+## Contributing
 If you'd like to contribute to this project, please fork the repository and create a pull request with your changes. Ensure your code adheres to the project's coding standards and includes tests for new features.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Acknowledgments
-Laravel for the powerful PHP framework.
-Jetstream for authentication scaffolding.
-All contributors and libraries that made this project possible.
+## Acknowledgments
+- Laravel for the powerful PHP framework.
+- Jetstream for authentication scaffolding.
+- All contributors and libraries that made this project possible.
+
+
