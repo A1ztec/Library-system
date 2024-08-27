@@ -12,7 +12,10 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        $middleware->alias([
+           'CheckUserType' => \App\Http\Middleware\CheckUserType::class,
+              'AccessControlByUserType' => \App\Http\Middleware\AccessControlByUserType::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
